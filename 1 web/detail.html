@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Kendaraan</title>
+    <link rel="stylesheet" href="awal-client.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Detail Kendaraan</h1>
+            <button onclick="goBack()">Kembali</button>
+        </div>
+        <div id="car-detail">
+            <!-- Detail mobil akan dimuat di sini -->
+        </div>
+        <button id="addInfoBtn">Tambah Informasi</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Tambah Informasi Kendaraan</h2>
+                <form id="infoForm">
+                    <label for="fuelDate">Kapan Isi Bensin:</label>
+                    <input type="date" id="fuelDate" name="fuelDate">
+
+                    <label for="interiorCondition">Kondisi Interior:</label>
+                    <input type="text" id="interiorCondition" name="interiorCondition">
+
+                    <label for="exteriorCondition">Kondisi Eksterior:</label>
+                    <input type="text" id="exteriorCondition" name="exteriorCondition">
+
+                    <label for="damage">Kerusakan Mobil:</label>
+                    <textarea id="damage" name="damage"></textarea>
+
+                    <button type="submit">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="detail.js"></script>
+</body>
+</html>

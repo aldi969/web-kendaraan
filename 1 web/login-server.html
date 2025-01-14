@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Mobil</title>
+    <link rel="stylesheet" href="login-server.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kondisi Mobil</h1>
+        </header>
+        <form id="carForm">
+            <section class="vehicle-info">
+                <h2>Informasi Kendaraan</h2>
+                <label for="vehicle-name">Nama Kendaraan:</label>
+                <input type="text" id="vehicle-name" name="vehicle_name" required>
+                
+                <label for="plate-number">Plat Nomor:</label>
+                <input type="text" id="plate-number" name="plate_number" required>
+            </section>
+            <section class="info">
+                <h2>Detail Servis</h2>
+                <label for="service-date">Tanggal Servis Terakhir:</label>
+                <input type="date" id="service-date" name="service_date" required>
+
+                <label for="service-interval">Servis Berkala (KM):</label>
+                <input type="number" id="service-interval" name="service_interval" required>
+            </section>
+            <section class="fuel">
+                <h2>Detail Pengisian BBM</h2>
+                <label for="fuel-date">Tanggal Pengisian Terakhir:</label>
+                <input type="date" id="fuel-date" name="fuel_date" required>
+
+                <label for="fuel-amount">Jumlah BBM (Liter):</label>
+                <input type="number" id="fuel-amount" name="fuel_amount" required>
+
+                <label for="fuel-type">Jenis BBM:</label>
+                <select id="fuel-type" name="fuel_type" required>
+                    <option value="pertalite">Pertalite</option>
+                    <option value="pertamax">Pertamax</option>
+                    <option value="pertamax-turbo">Pertamax Turbo</option>
+                    <option value="dexlite">Dexlite</option>
+                    <option value="pertadex">Pertadex</option>
+                    <option value="solar">Solar</option>
+                </select>
+            </section>
+            <section class="expenses">
+                <h2>Input Pengeluaran</h2>
+                <label for="expense-date">Tanggal:</label>
+                <input type="date" id="expense-date" name="expense_date" required>
+
+                <label for="expense-type">Jenis Pengeluaran:</label>
+                <input type="text" id="expense-type" name="expense_type" required>
+
+                <label for="expense-amount">Jumlah:</label>
+                <input type="number" id="expense-amount" name="expense_amount" required>
+            </section>
+            <section class="schedule">
+                <h2>Jadwal Servis dan Lainnya</h2>
+                <label for="next-service">Jadwal Servis Berikutnya:</label>
+                <input type="date" id="next-service" name="next_service" required>
+
+                <label for="oil-change">Jadwal Ganti Oli:</label>
+                <input type="date" id="oil-change" name="oil_change" required>
+
+                <label for="tax-payment">Jadwal Pembayaran Pajak:</label>
+                <input type="date" id="tax-payment" name="tax_payment" required>
+            </section>
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+    <script src="login-server.js"></script>
+</body>
+</html>
